@@ -194,8 +194,11 @@ public class CraftDriver {
 	 *            {@link WebDriver}
 	 */
 	public List<WebElement> findElements(By arg0) {
-		return findElements(arg0);
-	}
+		  
+              return driver.findElements(arg0);
+   }
+		
+	
 
 	/**
 	 * Function to Load a new web page in the current browser window.
