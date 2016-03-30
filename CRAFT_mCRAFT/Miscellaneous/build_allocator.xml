@@ -1,0 +1,46 @@
+<project name="HelloWorld" basedir="." default="main">
+<!-- Please update the below path with Project path (Eclipse workspace Project path) -->
+	<property name="tests.gui.dir" value="C:\ACoE In-house tools\mCRAFT" />
+	<property name="testset.name" value="Regression" />
+	
+	<property name="javalibs.dir" value="${tests.gui.dir}\supportlibraries\External_Jars" />
+	
+	<property name="build.dir" value="build" />
+	<property name="build.testreports.dir" value="${build.dir}\testreports" />
+	
+	
+	<target name="clean">
+		<echo message="Cleaning up old builds..." />
+		<delete dir="${build.dir}" />
+	</target>
+	
+	<!-- include project build code here as applicable -->
+	
+	<target name="selenium-ui-tests" depends="clean">
+		<mkdir dir="${build.testreports.dir}" />
+		<mkdir dir="${build.testreports.dir}\mCRAFT" />
+		
+		<path id="libs.mcraft.selenium">
+			<pathelement location="${tests.gui.dir}" />
+			<fileset dir="${javalibs.dir}" includes="*.jar" />
+		</path>
+		
+		<java dir="${tests.gui.dir}" classname="allocator.Allocator" fork="true" failonerror="false" resultproperty="selenium.tests.exitstatus">
+		<!--We can set the Run Configuration -->
+			<sysproperty key="RunConfiguration" value="${testset.name}" />
+			<sysproperty key="ReportPath" value="${basedir}\${build.testreports.dir}\mCRAFT"/>
+			
+			<classpath refid="libs.mcraft.selenium" />
+		</java>
+		
+		<fail message="Selenium tests failed!">
+            <condition>
+                <not>
+                    <equals arg1="${selenium.tests.exitstatus}" arg2="0"/>
+                </not>
+            </condition>
+        </fail>
+	</target>
+	
+	<target name="main" depends="clean,selenium-ui-tests" />
+</project>

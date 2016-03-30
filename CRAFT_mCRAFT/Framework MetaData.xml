@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<FrameworkMetaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Framework>mCRAFT</Framework>
+	<Language>Java</Language>
+	<Implementation>UiMap</Implementation>
+	<Repository>FileSystem</Repository>
+	<CurrentVersion>
+		<Number>2.0</Number>
+		<Date>05/02/2016</Date>
+	</CurrentVersion>
+</FrameworkMetaData>

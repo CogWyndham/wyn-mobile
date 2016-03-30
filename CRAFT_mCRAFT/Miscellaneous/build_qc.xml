@@ -1,0 +1,53 @@
+<project name="HelloWorld" basedir="." default="main">
+<!-- Please update the below path with Project path (Eclipse workspace Project path) -->
+	<property name="tests.gui.dir" value="C:\ACoE In-house tools\mCRAFT" />
+<!-- Please update the TestSet path of QC and also TestSet Name -->
+	<property name="testset.path" value="Root\mCRAFT" />
+	<property name="testset.name" value="Regression" />
+	
+	<property environment="environment" />
+	
+	<property name="build.dir" value="build" />
+	<property name="build.testreports.dir" value="${build.dir}\testreports" />
+	
+	<target name="clean">
+		<echo message="Cleaning up old builds..." />
+		<delete dir="${build.dir}" />
+	</target>
+	
+	<target name="selenium-ui-tests" depends="clean">
+		<mkdir dir="${build.testreports.dir}" />
+		<mkdir dir="${build.testreports.dir}\mcraft" />
+		
+		<echo message="Launching '${tests.gui.dir}\InitScript_QC.vbs'
+								'${testset.path}' '${testset.name}'" />
+		
+		<exec executable="cscript" resultproperty="vapixp.test.status">
+			<arg value="${tests.gui.dir}\InitScript_QC.vbs" />
+			<arg value="${testset.path}" />
+			<arg value="${testset.name}" />
+			<!-- The 2 arguments above are optional. If left unspecified,
+			the values specified in the framework's "InitScript_QC.vbs" will be used -->
+		</exec>
+		
+		<fail message="Selenium tests failed!">
+			<condition>
+				<not>
+					<equals arg1="${vapixp.test.status}" arg2="0"/>
+				</not>
+			</condition>
+		</fail>
+	</target>
+	
+	<target name="publish-test-report" depends="selenium-ui-tests">
+		<copy todir="${build.testreports.dir}\mcraft">
+			<fileset dir="${environment.TEMP}\Run_mm-dd-yyyy_hh-mm-ss_XX\Summary Report">
+				<include name="HTML Results\Summary.html" />
+			</fileset>
+		</copy>
+		
+		<echo message="Summary report published! Refer to HP ALM for detailed test reports" />
+	</target>
+	
+	<target name="main" depends="clean,publish-test-report" />
+</project>

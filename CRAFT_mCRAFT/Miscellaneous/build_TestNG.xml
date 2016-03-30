@@ -1,0 +1,46 @@
+<project name="HelloWorld" basedir="." default="main">
+<!-- Please update the below path with Project path (Eclipse workspace Project path) -->
+	<property name="tests.gui.dir" value="C:\ACoE In-house tools\mCRAFT" />
+	<property name="testset.name" value="sanity" />
+
+	<property name="javalibs.dir" value="${tests.gui.dir}\supportlibraries\External_Jars" />
+	
+	<property name="build.dir" value="build" />
+	<property name="build.testreports.dir" value="${build.dir}\testreports" />
+	
+<!-- Create testng folder under ${tests.gui.dir}\supportlibraries\External Jars and place testng jar under it  -->
+	<path id="lib.testng">
+		<fileset dir="${javalibs.dir}\testng" includes="testng-6.8.8.jar"/>
+	</path>
+	<taskdef resource="testngtasks" classpathref="lib.testng" />
+	
+	<target name="clean">
+		<echo message="Cleaning up old builds..." />
+		<delete dir="${build.dir}" />
+	</target>
+	
+<!-- include project build code here as applicable -->
+	
+	<target name="selenium-ui-tests" depends="clean">
+		<mkdir dir="${build.testreports.dir}" />
+		<mkdir dir="${build.testreports.dir}\mCRAFT" />
+		
+		<path id="libs.mcraft.selenium">
+			<pathelement location="${tests.gui.dir}" />
+			<fileset dir="${javalibs.dir}" includes="*.jar" />
+		</path>
+		
+		<testng outputdir="${build.testreports.dir}"
+				workingdir="${tests.gui.dir}"
+				haltonfailure="true"
+				classpathref="libs.mcraft.selenium">
+			
+			<sysproperty key="ReportPath" 
+						value="${basedir}\${build.testreports.dir}\mCRAFT"/>
+	<!-- The below line will execute testng_sanity.xml -->
+			<xmlfileset dir="${tests.gui.dir}" includes="testng_${testset.name}.xml" />
+		</testng>
+	</target>
+	
+	<target name="main" depends="clean,selenium-ui-tests" />
+</project>

@@ -1,0 +1,1 @@
+node "C:\Program Files\Appium\node_modules\appium\bin\appium.js" -a localhost -p 4726 -a 192.168.20.40 --nodeconfig "D:\Nizam\Appium Paralell\androidNative.json" --udid 05fc74e23444e523 --bootstrap-port 2256 --chromedriver-port 4736
