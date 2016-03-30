@@ -74,14 +74,15 @@ public class LoopNewApplicant extends ReusableLibrary {
 
 	// @input String would be : LocalDrive or DropBox or GoogleDrive or LinkedI
 	// or Email or NoResume
-
+	
+	
 	String resumeSource = "DropBox";
 
 	String stagingURL = "http://wynexternalstage.loop.jobs/";
-	// String stagingURL = "http://wynp2stage.loop.jobs/";
+	// // String stagingURL = "http://wynp2stage.loop.jobs/";
 
-	String jobKeyword = "US REQUISITION - TEST AUTOMATION";
-	String jobLocation = "Parsippany";
+	 String jobKeyword = "US REQUISITION - TEST AUTOMATION";
+	 String jobLocation = "Parsippany";
 
 	String browserTitle = "Welcome - Apply Process";
 

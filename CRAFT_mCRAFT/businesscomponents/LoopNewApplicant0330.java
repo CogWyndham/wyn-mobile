@@ -55,7 +55,7 @@ public class LoopNewApplicant0330 extends ReusableLibrary {
 	// protected RemoteWebDriver driver1;
 
 	public LoopNewApplicant0330(ScriptHelper scriptHelper) {
-		super(scriptHelper);
+	super(scriptHelper);
 	}
 
 	private Map<String, Object> perfectoCommand = new HashMap<>();
