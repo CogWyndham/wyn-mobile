@@ -205,6 +205,7 @@ public class CraftDriver {
 	 * {@link WebDriver}
 	 */
 	public void get(String arg0) {
+		
 		driver.get(arg0);
 	}
 

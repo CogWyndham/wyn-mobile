@@ -23,7 +23,7 @@ public abstract class ReusableLibrary {
 	/**
 	 * The {@link SeleniumReport} object (passed from the test script)
 	 */
-	protected SeleniumReport report;
+	protected static SeleniumReport report;
 	/**
 	 * The {@link CraftDriver} object
 	 */
