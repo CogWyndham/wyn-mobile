@@ -8,6 +8,7 @@ import java.net.URL;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
 import org.openqa.selenium.By;
@@ -259,9 +260,12 @@ public class CraftDriver {
 	/**
 	 * Function to Gets the Option interface. {@link WebDriver}
 	 */
-	public Options manage() {
-		return driver.manage();
-	}
+	
+	 public Options manage() {
+		//return driver.manage();
+		//driver.manage().timeouts().implicitlyWait(1,TimeUnit.MINUTES);
+		return driver.manage();		
+	} 
 
 	/**
 	 * Function to GetAn abstraction allowing the driver to access the browser's
@@ -1240,5 +1244,7 @@ public class CraftDriver {
 	public MobileDevice webForDevice(String deviceName, int timeout) {
 		return ((MobileWebDriver) driver).webForDevice(deviceName, timeout);
 	}
+
+	
 
 }
