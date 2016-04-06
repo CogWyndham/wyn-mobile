@@ -35,6 +35,8 @@ public class TaleoApp extends ReusableLibrary {
 	
 	WebDriver driver2 = new FirefoxDriver();
 	Actions builder = new Actions(driver2);
+	
+	
 	//Actions builder2 = new Actions(Keyboard );
 		
 	//LoopNewApplicant loopObj = new LoopNewApplicant(scriptHelper);
@@ -60,6 +62,7 @@ public class TaleoApp extends ReusableLibrary {
 			
 			System.out.print(tHnd1);
 			System.out.print(tHnd);*/
+					
 			
 			report.updateTestLog("Login Page", "Login Page Displayed Successfully", Status.PASS);
 			driver2.findElement(By.xpath("//input[contains(@id,'login-name1')]")).sendKeys(uName);
@@ -77,6 +80,7 @@ public class TaleoApp extends ReusableLibrary {
 			Thread.sleep(20000);
 			report.updateTestLog("Candidate Search Page", "Candidate Search Page Displayed Successfully", Status.PASS);	
 			builder.moveToElement(driver2.findElement(By.xpath(".//*[@id='baseForm_noFlashPanel']")),1000,40).click().perform();					
+		
 			Thread.sleep(10000);
 			
 			Runtime.getRuntime().exec("cscript C:\\NarenMobile\\muruga.vbs");
