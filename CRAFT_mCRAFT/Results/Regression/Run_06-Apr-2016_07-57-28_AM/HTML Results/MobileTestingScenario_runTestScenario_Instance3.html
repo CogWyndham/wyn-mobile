@@ -1,0 +1,485 @@
+<!DOCTYPE html> 
+<html> 
+	 <head> 
+		 <meta charset='UTF-8'> 
+		 <title>HRMS Staffing - Loop - MobileTestingScenario_runTestScenario_Instance3 Automation Execution Results</title> 
+
+		 <style type='text/css'> 
+			 body { 
+				 background-color: #F0F3F4; 
+				 font-family: Verdana, Geneva, sans-serif; 
+				 text-align: center; 
+			 } 
+
+			 small { 
+				 font-size: 0.7em; 
+			 } 
+
+			 table { 
+				 border: 1px solid #4D7C7B; 
+				 border-collapse: collapse; 
+				 border-spacing: 0px; 
+				 width: 95%; 
+				 margin-left: auto; 
+				 margin-right: auto; 
+			 } 
+
+			 tr.heading { 
+				 background-color: #A9D0F5; 
+				 color: #000000; 
+				 font-size: 0.9em; 
+				 font-weight: bold; 
+			 } 
+
+			 tr.subheading { 
+				 background-color: #E0E6F8; 
+				 color: #34495E; 
+				 font-weight: bold; 
+				 font-size: 0.9em; 
+				 text-align: justify; 
+			 } 
+
+			 tr.section { 
+				 background-color: #E0E6F8; 
+				 color: #333300; 
+				 cursor: pointer; 
+				 font-weight: bold; 
+				 font-size: 0.9em; 
+				 text-align: justify; 
+			 } 
+
+			 tr.subsection { 
+				 background-color: null; 
+				 cursor: pointer; 
+			 } 
+
+			 tr.content { 
+				 background-color: null; 
+				 color: #000000; 
+				 font-size: 0.9em; 
+				 display: table-row; 
+			 } 
+
+			 td { 
+				 padding: 4px; 
+				 text-align: inherit\0/; 
+				 word-wrap: break-word; 
+				 max-width: 450px; 
+			 } 
+
+			 th { 
+				 padding: 4px; 
+				 text-align: inherit\0/; 
+				 word-break: break-all; 
+				 max-width: 450px; 
+			 } 
+
+			 td.justified { 
+				 text-align: justify; 
+			 } 
+
+			 td.pass { 
+				 font-weight: bold; 
+				 color: green; 
+			 } 
+
+			 td.fail { 
+				 font-weight: bold; 
+				 color: red; 
+			 } 
+
+			 td.done, td.screenshot { 
+				 font-weight: bold; 
+				 color: black; 
+			 } 
+
+			 td.debug { 
+				 font-weight: bold; 
+				 color: blue; 
+			 } 
+
+			 td.warning { 
+				 font-weight: bold; 
+				 color: orange; 
+			 } 
+			 img { 
+				 width:400px; 
+				 height:300px; 
+			 } 
+		 </style> 
+
+		 <script> 
+			 function toggleMenu(objID) { 
+				 if (!document.getElementById) return; 
+				 var ob = document.getElementById(objID).style; 
+				 if(ob.display === 'none') { 
+					 try { 
+						 ob.display='table-row-group'; 
+					 } catch(ex) { 
+						 ob.display='block'; 
+					 } 
+				 } 
+				 else { 
+					 ob.display='none'; 
+				 } 
+			 } 
+			 function toggleSubMenu(objId) { 
+				 for(i=1; i<10000; i++) { 
+					 var ob = document.getElementById(objId.concat(i)); 
+					 if(ob === null) { 
+						 break; 
+					 } 
+					 if(ob.style.display === 'none') { 
+						 try { 
+							 ob.style.display='table-row'; 
+						 } catch(ex) { 
+							 ob.style.display='block'; 
+						 } 
+					 } 
+					 else { 
+						 ob.style.display='none'; 
+					 } 
+				 } 
+			 } 
+		 </script> 
+	 </head> 
+
+	 <body> 
+		 <table id='header'> 
+			 <thead> 
+				 <tr class='heading'> 
+					 <th colspan='4' style='font-family:Copperplate Gothic; font-size:1.4em;'> 
+						 HRMS Staffing - Loop - MobileTestingScenario_runTestScenario_Instance3 Automation Execution Results 
+					 </th> 
+				 </tr> 
+				 <tr class='subheading'> 
+					 <th>&nbsp;Date&nbsp;&&nbsp;Time</th> 
+					 <th>&nbsp;:&nbsp;06-Apr-2016&nbsp;07:57:31&nbsp;AM</th> 
+					 <th>&nbsp;Iteration&nbsp;Mode</th> 
+					 <th>&nbsp;:&nbsp;RUN_ONE_ITERATION_ONLY</th> 
+				 </tr> 
+				 <tr class='subheading'> 
+					 <th>&nbsp;Start&nbsp;Iteration</th> 
+					 <th>&nbsp;:&nbsp;1</th> 
+					 <th>&nbsp;End&nbsp;Iteration</th> 
+					 <th>&nbsp;:&nbsp;1</th> 
+				 </tr> 
+				 <tr class='subheading'> 
+					 <th>&nbsp;Browser/Platform</th> 
+					 <th>&nbsp;:&nbsp;FIREFOX&nbsp;on&nbsp;WINDOWS</th> 
+					 <th>&nbsp;Executed&nbsp;on</th> 
+					 <th>&nbsp;:&nbsp;Local&nbsp;Machine</th> 
+				 </tr> 
+			 </thead> 
+		 </table> 
+
+		 <table id='main'> 
+			 <thead> 
+				 <tr class='heading'> 
+					 <th>Step No</th> 
+					 <th>Step Name</th> 
+					 <th>Description</th> 
+					 <th>Status</th> 
+					 <th>Step Time</th> 
+					 <th>ScreenShot</th> 
+				 </tr> 
+			 </thead> 
+
+			 <tbody> 
+				 <tr class='section'> 
+					 <td colspan='6' onclick="toggleMenu('Iteration1')">+ Iteration: 1</td> 
+				 </tr> 
+			 </tbody> 
+			 <tbody id='Iteration1' style='display:table-row-group'> 
+				 <tr class='subheading subsection'> 
+					 <td colspan='6' onclick="toggleSubMenu('Iteration1runTestScenario')">&nbsp;+ runTestScenario</td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario1'> 
+					 <td>1</td> 
+					 <td class='justified'>Staging Page Navigation</td> 
+					 <td class='justified'>Navigation to Staging page Success</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 07:57:42 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_07-57-42_AM_Staging_Page_Navigation.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario2'> 
+					 <td>2</td> 
+					 <td class='justified'>Create Account</td> 
+					 <td class='justified'>Create Account text found</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 07:58:28 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_07-58-27_AM_Create_Account.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario3'> 
+					 <td>3</td> 
+					 <td class='justified'>Create Account</td> 
+					 <td class='justified'>Create Account Success</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 07:58:47 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_07-58-46_AM_Create_Account.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario4'> 
+					 <td>4</td> 
+					 <td class='justified'>Continue</td> 
+					 <td class='justified'>Continue text found</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 07:58:47 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_07-58-47_AM_Continue.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario5'> 
+					 <td>5</td> 
+					 <td class='justified'>privacyAgreement</td> 
+					 <td class='justified'>privacyAgreement selection success</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 07:58:52 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_07-58-51_AM_privacyAgreement.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario6'> 
+					 <td>6</td> 
+					 <td class='justified'>Resume Option</td> 
+					 <td class='justified'>Resume upload options displayed </td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 07:58:52 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_07-58-52_AM_Resume_Option.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario7'> 
+					 <td>7</td> 
+					 <td class='justified'>Dropbox Option</td> 
+					 <td class='justified'>Dropbox option selected for resume upload</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 07:59:00 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_07-58-59_AM_Dropbox_Option.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario8'> 
+					 <td>8</td> 
+					 <td class='justified'>Dropbox Option</td> 
+					 <td class='justified'>Resume uploaded from Dropbox</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 07:59:12 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_07-59-12_AM_Dropbox_Option.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario9'> 
+					 <td>9</td> 
+					 <td class='justified'>Dropbox Option</td> 
+					 <td class='justified'>Resume selected from Dropbox</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 07:59:18 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_07-59-17_AM_Dropbox_Option.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario10'> 
+					 <td>10</td> 
+					 <td class='justified'>Tell us about yourself</td> 
+					 <td class='justified'>Details entered successfully</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:00:01 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-00-00_AM_Tell_us_about_yourself.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario11'> 
+					 <td>11</td> 
+					 <td class='justified'>Tell us about yourself</td> 
+					 <td class='justified'>Source details entered successfully</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:00:12 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-00-11_AM_Tell_us_about_yourself.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario12'> 
+					 <td>12</td> 
+					 <td class='justified'>Work Experience</td> 
+					 <td class='justified'>Work Experience Details entered successfully</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:00:23 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-00-22_AM_Work_Experience.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario13'> 
+					 <td>13</td> 
+					 <td class='justified'>Education</td> 
+					 <td class='justified'>Education Details entered successfully</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:00:40 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-00-39_AM_Education.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario14'> 
+					 <td>14</td> 
+					 <td class='justified'>Questions</td> 
+					 <td class='justified'>Details are entered successfully in questions tab</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:00:47 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-00-46_AM_Questions.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario15'> 
+					 <td>15</td> 
+					 <td class='justified'>Are we good Match</td> 
+					 <td class='justified'>Details entered in Are we good Match tab successfully</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:00:58 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-00-58_AM_Are_we_good_Match.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario16'> 
+					 <td>16</td> 
+					 <td class='justified'>Diversity</td> 
+					 <td class='justified'>Diversity Details entered successfully</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:01:21 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-01-21_AM_Diversity.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario17'> 
+					 <td>17</td> 
+					 <td class='justified'>eSignature</td> 
+					 <td class='justified'>eSignature Details entered successfully</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:01:29 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-01-28_AM_eSignature.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario18'> 
+					 <td>18</td> 
+					 <td class='justified'>Attachment</td> 
+					 <td class='justified'>Attachment Details entered successfully</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:01:35 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-01-34_AM_Attachment.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario19'> 
+					 <td>19</td> 
+					 <td class='justified'>Review and Submit</td> 
+					 <td class='justified'>Application reviewed and submitted successfully</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:01:46 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-01-45_AM_Review_and_Submit.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario20'> 
+					 <td>20</td> 
+					 <td class='justified'>Application Completed</td> 
+					 <td class='justified'>Application is completed successfully</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:02:00 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-01-59_AM_Application_Completed.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario21'> 
+					 <td>21</td> 
+					 <td class='justified'>CRM Loop Validation</td> 
+					 <td class='justified'>CRM Loop URL is opened</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:02:12 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-02-12_AM_CRM_Loop_Validation.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario22'> 
+					 <td>22</td> 
+					 <td class='justified'>CRM Loop Validation</td> 
+					 <td class='justified'>Login successfully into CRM Loop </td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:02:21 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-02-21_AM_CRM_Loop_Validation.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario23'> 
+					 <td>23</td> 
+					 <td class='justified'>CRM Loop Validation</td> 
+					 <td class='justified'>Searched in the CRM Loop with the Applicant ID </td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:02:42 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-02-42_AM_CRM_Loop_Validation.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario24'> 
+					 <td>24</td> 
+					 <td class='justified'>CRM Loop Validation</td> 
+					 <td class='justified'>Candidate Applicant Type is External</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:02:49 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-02-49_AM_CRM_Loop_Validation.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario25'> 
+					 <td>25</td> 
+					 <td class='justified'>CRM Loop Validation</td> 
+					 <td class='justified'>Candidate Applicant Email ID is TaleoWyndham+20160406_075825.126@gmail.com</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:02:49 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-02-49_AM_CRM_Loop_Validation.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario26'> 
+					 <td>26</td> 
+					 <td class='justified'>CRM Loop Validation</td> 
+					 <td class='justified'>Wyndham Worldwide Careers Email is present in CRM Loop Dashboard</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:02:54 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-02-54_AM_CRM_Loop_Validation.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario27'> 
+					 <td>27</td> 
+					 <td class='justified'>CRM Loop Validation</td> 
+					 <td class='justified'>Thank you for Registering Email is present in CRM Loop Dashboard</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:02:55 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-02-55_AM_CRM_Loop_Validation.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario28'> 
+					 <td>28</td> 
+					 <td class='justified'>CRM Loop Validation</td> 
+					 <td class='justified'>Confirmation of Application Email is present in CRM Loop Dashboard</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:02:55 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-02-55_AM_CRM_Loop_Validation.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario29'> 
+					 <td>29</td> 
+					 <td class='justified'>CRM Loop Validation</td> 
+					 <td class='justified'>Wyndham Worldwide Email is present in CRM Loop Dashboard</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:02:55 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-02-55_AM_CRM_Loop_Validation.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario30'> 
+					 <td>30</td> 
+					 <td class='justified'>Login Page</td> 
+					 <td class='justified'>Login Page Displayed Successfully</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:03:01 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-03-00_AM_Login_Page.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario31'> 
+					 <td>31</td> 
+					 <td class='justified'>Candidate Search Page</td> 
+					 <td class='justified'>Candidate Search Page Displayed Successfully</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:03:23 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-03-23_AM_Candidate_Search_Page.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario32'> 
+					 <td>32</td> 
+					 <td class='justified'>Candidate Home</td> 
+					 <td class='justified'>Candidate Home Page Displayed Successfully</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:03:44 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-03-43_AM_Candidate_Home.png'></img></td> 
+				 </tr> 
+				 <tr class='content' id='Iteration1runTestScenario33'> 
+					 <td>33</td> 
+					 <td class='justified'>Attachhments</td> 
+					 <td class='justified'>Attachments displayed successfully</td> 
+					 <td class='pass'>PASS</td> 
+					 <td><small>06-Apr-2016 08:04:14 AM</small></td> 
+					 <td><img src='..\Screenshots\MobileTestingScenario_runTestScenario_Instance3_06-Apr-2016_08-04-14_AM_Attachhments.png'></img></td> 
+				 </tr> 
+			 </tbody> 
+		 </table> 
+
+		 <table id='footer'> 
+			 <colgroup> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+				 <col style='width: 25%' /> 
+			 </colgroup> 
+
+			 <tfoot> 
+				 <tr class='heading'> 
+					 <th colspan='4'>Execution Duration: 7 minute(s), 33 second(s)</th> 
+				 </tr> 
+				 <tr class='subheading'> 
+					 <td class='pass'>&nbsp;Steps passed</td> 
+					 <td class='pass'>&nbsp;: 33</td> 
+					 <td class='fail'>&nbsp;Steps failed</td> 
+					 <td class='fail'>&nbsp;: 0</td> 
+				 </tr> 
+			 </tfoot> 
+		 </table> 
+	 </body> 
+</html>

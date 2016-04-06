@@ -1,0 +1,24 @@
+org.openqa.selenium.TimeoutException: Timed out after 120 seconds waiting for visibility of element located by By.xpath: //div[@class='lbl_Jobdetail_desc']//a[text()='APPLY NOW']
+Build info: version: '2.42.2', revision: '6a6995d31c7c56c340d6f45a76976d43506cd6cc', time: '2014-06-03 10:52:47'
+System info: host: 'NJITSATYARAMD6', ip: '10.82.89.22', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_79'
+Session ID: cd640611-a3e0-49ba-b50c-9479c4c9c146
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{platform=ANY, scriptName=RemoteWebDriver, serverConnector=, javascriptEnabled=true, host=wyn.perfectomobile.com, browserName=Chrome, executionId=ramanna.satyaph@wyn.com_RemoteWebDriver_16-04-05_14_18_47_233, rotatable=true, entityType=remote_web_driver, locationContextEnabled=true, webdriver.remote.sessionid=cd640611-a3e0-49ba-b50c-9479c4c9c146, password=, cssSelectorsEnabled=true, platformName=Android, deviceName=45E43C37, reportKey=PRIVATE:RemoteWebDriver/RemoteWebDriver_16-04-05_14_18_47_233.xml, windTunnelReportUrl=https://wyn.perfectomobile.com/nexperience/windtunnel/report/?reportRepositoryKey=PRIVATE:RemoteWebDriver/RemoteWebDriver_16-04-05_14_18_47_233.xml&ownerId=ramanna.satyaph@wyn.com&sharingCode=2303470b-65d6-4c39-93b2-bf821541b908, user=, takesScreenshot=true}]
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.cognizant.framework.selenium.WebDriverUtil.waitUntilElementVisible(WebDriverUtil.java:88)
+	at businesscomponents.LoopCoreLibrary.searchAndApplyForRequisition(LoopCoreLibrary.java:117)
+	at businesscomponents.TestScenario1.runTestScenario(TestScenario1.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at supportlibraries.DriverScript.invokeBusinessComponent(DriverScript.java:894)
+	at supportlibraries.DriverScript.executeTestcase(DriverScript.java:841)
+	at supportlibraries.DriverScript.executeCRAFTTestIterations(DriverScript.java:742)
+	at supportlibraries.DriverScript.executeCraftOrCraftLite(DriverScript.java:140)
+	at supportlibraries.DriverScript.driveTestExecution(DriverScript.java:130)
+	at allocator.ParallelRunner.run(ParallelRunner.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
